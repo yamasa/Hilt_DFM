@@ -23,8 +23,11 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.launch_regular_feature_button).setLaunchActivityClickListener(
             "com.example.hilt_dfm.regular_feature.RegularFeatureActivity"
         )
-        findViewById<Button>(R.id.launch_dfm_button).setLaunchActivityClickListener(
-            "com.example.hilt_dfm.dynamic_feature.DfmActivity"
+        findViewById<Button>(R.id.launch_dfm_hilt_button).setLaunchActivityClickListener(
+            "com.example.hilt_dfm.dynamic_feature.DfmHiltActivity"
+        )
+        findViewById<Button>(R.id.launch_dfm_dagger_button).setLaunchActivityClickListener(
+            "com.example.hilt_dfm.dynamic_feature.DfmDaggerActivity"
         )
 
         val messageText: TextView = findViewById(R.id.message_text)

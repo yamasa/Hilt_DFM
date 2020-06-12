@@ -12,7 +12,8 @@
     </dist:module>
 
     <application>
-        <activity android:name=".DfmActivity" />
+        <activity android:name=".DfmDaggerActivity" />
+        <activity android:name=".DfmHiltActivity" />
     </application>
 
 </manifest>

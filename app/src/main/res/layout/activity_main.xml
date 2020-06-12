@@ -18,15 +18,26 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/launch_dfm_button"
+        android:id="@+id/launch_dfm_hilt_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="Launch DFM"
+        android:text="Launch DFM hilt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/launch_regular_feature_button" />
+
+    <Button
+        android:id="@+id/launch_dfm_dagger_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Launch DFM dagger"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/launch_dfm_hilt_button" />
 
     <TextView
         android:id="@+id/message_text"
@@ -36,6 +47,6 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/launch_dfm_button" />
+        app:layout_constraintTop_toBottomOf="@+id/launch_dfm_dagger_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
