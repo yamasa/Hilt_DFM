@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hilt_dfm.regular_feature">
+
+    <application>
+        <activity android:name=".RegularFeatureActivity" />
+    </application>
+
+</manifest>

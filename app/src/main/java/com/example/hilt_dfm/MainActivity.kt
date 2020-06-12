@@ -20,18 +20,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button: Button = findViewById(R.id.launch_dfm_button)
-        button.setOnClickListener {
-            val intent = Intent().also {
-                it.component = ComponentName(
-                    packageName,
-                    "com.example.hilt_dfm.dynamic_feature.DfmActivity"
-                )
-            }
-            startActivity(intent)
-        }
+        findViewById<Button>(R.id.launch_regular_feature_button).setLaunchActivityClickListener(
+            "com.example.hilt_dfm.regular_feature.RegularFeatureActivity"
+        )
+        findViewById<Button>(R.id.launch_dfm_button).setLaunchActivityClickListener(
+            "com.example.hilt_dfm.dynamic_feature.DfmActivity"
+        )
 
         val messageText: TextView = findViewById(R.id.message_text)
         messageText.text = sampleRepository.getMessage()
+    }
+
+    private fun Button.setLaunchActivityClickListener(className: String) {
+        setOnClickListener {
+            val intent = Intent().also {
+                it.component = ComponentName(packageName, className)
+            }
+            startActivity(intent)
+        }
     }
 }

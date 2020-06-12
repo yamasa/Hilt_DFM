@@ -7,6 +7,17 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/launch_regular_feature_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Launch regular feature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/launch_dfm_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,7 +26,7 @@
         android:layout_marginTop="16dp"
         android:text="Launch DFM"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/launch_regular_feature_button" />
 
     <TextView
         android:id="@+id/message_text"
