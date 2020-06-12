@@ -1,4 +1,4 @@
-package com.example.hilt_dfm.feature
+package com.example.hilt_dfm.dynamic_feature
 
 import android.os.Bundle
 import android.widget.TextView

@@ -28,7 +28,7 @@ android {
         jvmTarget = '1.8'
     }
 
-    dynamicFeatures = [':feature']
+    dynamicFeatures = [':dynamic_feature']
 }
 
 kapt {

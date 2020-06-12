@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Hilt DFM</string>
-    <string name="title_feature">Feature Module</string>
+    <string name="title_dynamic_feature">Dynamic Feature Module</string>
 </resources>

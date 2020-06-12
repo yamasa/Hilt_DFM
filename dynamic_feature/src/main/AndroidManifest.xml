@@ -1,10 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.example.hilt_dfm.feature">
+    package="com.example.hilt_dfm.dynamic_feature">
 
     <dist:module
         dist:instant="false"
-        dist:title="@string/title_feature">
+        dist:title="@string/title_dynamic_feature">
         <dist:delivery>
             <dist:install-time />
         </dist:delivery>

@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent().also {
                 it.component = ComponentName(
                     packageName,
-                    "com.example.hilt_dfm.feature.DfmActivity"
+                    "com.example.hilt_dfm.dynamic_feature.DfmActivity"
                 )
             }
             startActivity(intent)
