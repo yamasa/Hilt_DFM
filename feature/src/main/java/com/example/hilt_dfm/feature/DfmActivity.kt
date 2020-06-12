@@ -3,7 +3,7 @@ package com.example.hilt_dfm.feature
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.hilt_dfm.SampleRepository
+import com.example.hilt_dfm.base.SampleRepository
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

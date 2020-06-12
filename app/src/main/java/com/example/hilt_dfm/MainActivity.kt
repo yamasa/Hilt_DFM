@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.hilt_dfm.base.SampleRepository
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

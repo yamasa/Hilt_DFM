@@ -1,3 +1,4 @@
 include ':app'
+include ':base'
 include ':feature'
 rootProject.name = "Hilt DFM"
